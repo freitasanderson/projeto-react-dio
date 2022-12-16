@@ -1,4 +1,3 @@
-import Button from "./components/Button";
 
 import {
   BrowserRouter as Router,
@@ -12,17 +11,12 @@ import {Login} from './pages/login';
 function App() {
   return (
     <>
-    <div className="App">
-      <h1>Olá React</h1>
-      <Button title="Entrar"/>
-    </div>
-    
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/login" element={<Login/>}/>
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/login" element={<Login/>}/>
+        </Routes>
+      </Router>
     </>
   );
 }
