@@ -7,6 +7,9 @@ import {
 
 import {Home} from './pages/home';
 import {Login} from './pages/login';
+import {Feed} from './pages/feed';
+import { Teste } from "./pages";
+
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/feed" element={<Feed/>}/>
+          <Route path="/Teste" element={<Teste/>}/>
+          
         </Routes>
       </Router>
     </>
